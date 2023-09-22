@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Clear Cache",
+  "version": "1.0",
+  "description": "Clears browser cache",
+  "permissions": ["storage", "tabs", "browsingData"],
+  "background": {
+    "service_worker": "/src/background/background.js"
+  },
+  "action": {
+    "default_popup": "/src/popup/popup.html"
+  }
+}

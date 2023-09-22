@@ -1,0 +1,23 @@
+{
+  "name": "clean-cache-google-chrome-extension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/test/setupJest.js"
+    ],
+    "testEnvironment": "jsdom"
+  },
+  "author": "Javier",
+  "license": "ISC",
+  "devDependencies": {
+    "jest-environment-jsdom": "^29.7.0"
+  }
+}
