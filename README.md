@@ -1,7 +1,40 @@
-# Creating a Chrome extension with GitHub Copilot on a livestream 
+# Creating a Chrome extension with GitHub Copilot and chatGPT-4
 
-- I asked Copilot and ChatPT-4 what is the best structure of a Chrome extension should look like
-<img width="1040" alt="Screen Shot 2023-04-11 at 11 32 37 AM" src="https://user-images.githubusercontent.com/22990146/231248902-95016f3c-1a76-4beb-9c81-4cd2baa36397.png">
+Organizing your Chrome extension project with a clear and scalable structure is crucial for maintainability and collaboration. Here’s a suggested project structure that follows best practices:
+
+```
+my-extension/
+│
+├── src/
+│   ├── assets/
+│   │   ├── images/
+│   │   │   └── icon.png
+│   │   └── styles/
+│   │       └── popup.css
+│   │
+│   ├── background/
+│   │   └── background.js
+│   │
+│   ├── popup/
+│   │   ├── popup.html
+│   │   └── popup.js
+│   │
+│   ├── content/
+│   │   └── content.js
+│   │
+│   └── lib/
+│       └── utility.js
+│
+├── dist/
+│   └── (compiled or bundled files)
+│
+├── test/
+│   └── (test scripts and files)
+│
+├── .gitignore
+├── manifest.json
+└── README.md
+```
 
 ### Create a manifest file
 - Inside folder, create filed called manifest.json
